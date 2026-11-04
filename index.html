@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Kofi Adofo, Computer Science graduate and IT enthusiast.">
+  <title>Kofi Adofo | IT & Software Portfolio</title>
+  <style>
+    :root {
+      --ink: #172033; --muted: #637087; --brand: #2457d6;
+      --surface: #ffffff; --soft: #f3f6fc; --line: #e3e9f3;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--surface); line-height: 1.65; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1080px, 90%); margin: auto; }
+    header { background: #101a32; color: white; padding: 18px 0; }
+    nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .logo { font-weight: 800; letter-spacing: .3px; color: white; }
+    nav ul { display: flex; list-style: none; gap: 22px; padding: 0; margin: 0; flex-wrap: wrap; }
+    nav a { color: #e8edff; font-size: .94rem; }
+    .hero { background: linear-gradient(135deg, #101a32, #203d78); color: white; padding: 88px 0 82px; }
+    .eyebrow { color: #b9ccff; text-transform: uppercase; letter-spacing: 2px; font-size: .8rem; font-weight: bold; }
+    h1 { font-size: clamp(2.4rem, 6vw, 4.5rem); line-height: 1.08; margin: 12px 0 18px; }
+    .hero p { color: #e0e8ff; max-width: 680px; font-size: 1.12rem; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .btn { display: inline-block; padding: 12px 19px; border-radius: 8px; font-weight: bold; background: white; color: #18336e; }
+    .btn.secondary { background: transparent; color: white; border: 1px solid #aabce9; }
+    section { padding: 66px 0; }
+    section:nth-of-type(even) { background: var(--soft); }
+    h2 { font-size: 2rem; margin: 0 0 10px; }
+    .intro { color: var(--muted); max-width: 720px; margin: 0 0 28px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+    .card { background: white; border: 1px solid var(--line); border-radius: 13px; padding: 22px; box-shadow: 0 5px 18px rgba(23,32,51,.04); }
+    .card h3 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--muted); }
+    .taglist { display: flex; flex-wrap: wrap; gap: 9px; }
+    .tag { background: #eaf0ff; color: #24458f; border-radius: 30px; padding: 7px 12px; font-size: .9rem; }
+    .note { background: #fff8e8; border-left: 4px solid #d99b23; padding: 14px 17px; border-radius: 6px; color: #684b13; }
+    .contact { background: #101a32; color: white; }
+    .contact .intro { color: #d5def4; }
+    .contact a { color: #c5d5ff; }
+    footer { background: #0b1224; color: #b7c1d6; padding: 20px 0; font-size: .9rem; text-align: center; }
+    @media (max-width: 600px) { nav { align-items: flex-start; } nav ul { gap: 12px; } .hero { padding: 65px 0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav aria-label="Main navigation">
+        <a class="logo" href="#home">KOFI ADOFO</a>
+        <ul>
+          <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="eyebrow">Computer Science • IT • Digital Solutions</div>
+        <h1>Hello, I'm Kofi Adofo.</h1>
+        <p>I am a Computer Science graduate with an interest in software development, information technology, data management and practical digital solutions. I enjoy using technology to solve everyday problems and improve work processes.</p>
+        <div class="actions">
+          <a class="btn" href="#projects">Explore my work</a>
+          <a class="btn secondary" href="https://github.com/Kofi-0" target="_blank" rel="noopener">Visit my GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <h2>About Me</h2>
+        <p class="intro">I have an academic background in Computer Science and practical exposure to IT support, health information systems, data handling and quality control. I am interested in opportunities where I can keep learning, contribute to a team and apply technology to real-world needs.</p>
+        <div class="note"><strong>Portfolio in progress:</strong> This site is an introduction to my skills and work. Project descriptions will be updated with screenshots, source code and live demonstrations as they are published.</div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <h2>Technical Skills</h2>
+        <p class="intro">A selection of technologies and tools I have used or studied. Proficiency levels should be confirmed and adjusted to reflect my current practical ability.</p>
+        <div class="grid">
+          <div class="card"><h3>Programming & Web</h3><div class="taglist"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">SQL / MySQL</span></div></div>
+          <div class="card"><h3>Frameworks & Tools</h3><div class="taglist"><span class="tag">Flutter</span><span class="tag">Visual Studio Code</span><span class="tag">GitHub</span><span class="tag">Microsoft Excel</span></div></div>
+          <div class="card"><h3>Areas of Interest</h3><div class="taglist"><span class="tag">IT Support</span><span class="tag">Data Management</span><span class="tag">Systems Development</span><span class="tag">Digital Solutions</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <h2>Selected Projects</h2>
+        <p class="intro">These are project areas I have worked on. The descriptions are initial summaries; I will add verified details and project links as I publish the work.</p>
+        <div class="grid">
+          <article class="card"><h3>DEELI Member Database</h3><p>A Google Forms and Sheets workflow concept for collecting, organising and reviewing member information for an economic empowerment initiative.</p></article>
+          <article class="card"><h3>Electrical Cable Sizing Calculator</h3><p>A calculator project planned to help users estimate cable sizes from electrical input requirements, with an offline-friendly approach.</p></article>
+          <article class="card"><h3>Excel Business Management Solutions</h3><p>Spreadsheet-based tools for organising business records, sales information and invoice workflows.</p></article>
+          <article class="card"><h3>Health Information Systems Exposure</h3><p>Practical experience supporting health information system processes and patient information workflows during National Service.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <h2>Experience</h2>
+        <div class="grid">
+          <article class="card"><h3>Quality Control Officer</h3><p><strong>Another From Kwame</strong><br>June – September 2026<br>Supported product inspections, checked finished wood products for faults and helped ensure orders were ready for delivery.</p></article>
+          <article class="card"><h3>National Service – Health Information Systems</h3><p><strong>37 Military Hospital</strong><br>2025<br>Gained practical exposure to health information system processes and administrative support within a clinical setting.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2>Let's Connect</h2>
+        <p class="intro">I welcome opportunities to learn, collaborate and contribute to IT and technology-related projects.</p>
+        <p>GitHub: <a href="https://github.com/Kofi-0" target="_blank" rel="noopener">github.com/Kofi-0</a></p>
+        <p>Email: <a href="mailto:adofokofi67@gmail.com">adofokofi67@gmail.com</a></p>
+        <p>Location: Accra, Ghana</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">© 2026 Kofi Adofo. Portfolio website.</div></footer>
+</body>
+</html>
